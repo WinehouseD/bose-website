@@ -26,9 +26,22 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 640px) {
+  .header {
+    height: 65vh;
+    background-position: inherit;
+  }
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+  .header__top {
+    justify-content: initial;
+  }
 }
 
 .header__title {
@@ -39,6 +52,12 @@ body {
   font-style: italic;
   font-weight: 800;
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 640px) {
+  .header__title {
+    font-size: 30px;
+  }
 }
 /* #endregion */
 /* #region menu */
@@ -88,6 +107,12 @@ body {
   padding: 120px;
   background-color: #edf3f0;
 }
+
+@media (max-width: 640px) {
+  .main {
+    padding: 40px;
+  }
+}
 /* #endregion */
 /* #region recommended */
 .recommended {
@@ -104,10 +129,23 @@ body {
   letter-spacing: -1.5px;
 }
 
+@media (max-width: 640px) {
+  .recommended__title {
+    font-size: 40px;
+  }
+}
+
 .recommended__products {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+@media (max-width: 640px) {
+  .recommended__products {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* #endregion */
 /* #region product */
@@ -151,6 +189,12 @@ body {
   text-align: center;
   letter-spacing: -1.5px;
 }
+
+@media (max-width: 640px) {
+  .categories__title {
+    font-size: 40px;
+  }
+}
 /* #endregion */
 /* #region category */
 .category {
@@ -190,6 +234,12 @@ body {
   line-height: 100%;
   font-weight: bold;
   letter-spacing: -1.5px;
+}
+
+@media (max-width: 640px) {
+  .how-to-buy__title {
+    font-size: 40px;
+  }
 }
 .how-to-buy__content {
   flex-basis: 50%;
