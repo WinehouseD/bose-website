@@ -10,6 +10,12 @@ body {
   font-size: 16px;
   line-height: 140%;
 }
+
+@media (max-width: 420px) {
+  body {
+    font-size: 18px;
+  }
+}
 /* #endregion */
 /* #region header */
 .header {
@@ -29,6 +35,13 @@ body {
 @media (max-width: 640px) {
   .header {
     height: 65vh;
+    background-position: inherit;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    height: 52vh;
     background-position: inherit;
   }
 }
@@ -55,6 +68,12 @@ body {
 }
 
 @media (max-width: 640px) {
+  .header__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
   .header__title {
     font-size: 30px;
   }
@@ -110,7 +129,7 @@ body {
 
 @media (max-width: 640px) {
   .main {
-    padding: 40px;
+    padding: 20px;
   }
 }
 /* #endregion */
@@ -264,4 +283,18 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    height: 270px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer {
+    height: 270px;
+    padding: 20px;
+  }
 }
