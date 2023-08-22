@@ -1,4 +1,22 @@
 /* #region page */
+:root {
+  --primary-color: #e1eae6;
+  --second-color: #292929;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e1eae6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 2px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +24,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  color: #292929;
+  color: var(--second-color);
   font-size: 16px;
   line-height: 140%;
 }
@@ -110,11 +128,11 @@ body {
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 34px;
 }
 
 .nav__link {
-  color: #292929;
+  color: var(--second-color);
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
@@ -126,7 +144,7 @@ body {
 /* #region main */
 .main {
   padding: 120px;
-  background-color: #edf3f0;
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 640px) {
@@ -305,5 +323,36 @@ body {
   .footer {
     height: 270px;
     padding: 20px;
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  right: 25px;
+  bottom: 800px;
+  width: 45px;
+  height: 45px;
+  background: #29292900 url(pics/icons/scroll-up.png);
+  border-radius: 40%;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.scroll-top.active {
+  bottom: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 420px) {
+  .scroll-top {
+    background-size: 25px;
+    right: 10px;
   }
 }

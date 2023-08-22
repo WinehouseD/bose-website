@@ -12,19 +12,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <!-- #endregion -->
   <body id="home">
     <header class="header">
       <div class="header__top">
-        <img src="pics/Logo.png" alt="Bose logo" />
+        <img src="pics/Logo.png" alt="Bose logo" style="width: 230px" />
         <a href="#menu">
-          <img src="pics/icons/Icon-Burger-menu.png" alt="Burger menu" />
+          <img
+            src="pics/icons/Icon-Burger-menu.png"
+            alt="Burger menu"
+            style="width: 30px; height: 30px"
+          />
         </a>
       </div>
 
       <div class="header__bottom">
-        <img src="pics/Sound waves.png" alt="Sound waves" />
+        <img src="pics/Sound waves.png" alt="Sound waves" width="80px" />
 
         <h1 class="header__title">
           The world shades.
@@ -38,7 +43,11 @@
       <div class="menu__top">
         <img src="pics/Logo.png" alt="Bose logo" />
         <a href="#home">
-          <img src="pics/icons/Icon-Close.png" alt="Close" />
+          <img
+            src="pics/icons/Icon-Close.png"
+            alt="Close"
+            style="width: 27px"
+          />
         </a>
       </div>
 
@@ -167,5 +176,6 @@
     </main>
 
     <footer class="footer"></footer>
+    <div class="scroll-top" onclick="scrollToTop();"></div>
   </body>
 </html>
