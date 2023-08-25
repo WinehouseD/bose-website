@@ -435,12 +435,13 @@ body {
 
 @media (max-width: 383px) {
   .bose-corporation {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 5px;
   }
 }
 @media (max-width: 576px) {
   .bose-corporation {
+    font-size: 12px;
     margin-bottom: 5px;
   }
 }
