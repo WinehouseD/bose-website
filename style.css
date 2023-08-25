@@ -466,7 +466,7 @@ body {
 }
 
 .scroll-top.active {
-  bottom: 20px;
+  bottom: 60px;
   visibility: visible;
   opacity: 1;
 }
@@ -519,11 +519,6 @@ body {
   background-color: var(--primary-color);
 }
 
-@media (max-width: 576px) {
-  .links {
-    text-align: center;
-  }
-}
 /* #endregion */
 
 .carousel-item {
