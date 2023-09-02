@@ -122,6 +122,7 @@ body {
 
 .menu:target {
   transform: translateX(-0%);
+  z-index: 2;
 }
 
 .menu__top {
