@@ -610,6 +610,12 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 576px) {
+  .modal-form input[type="email"] {
+    padding: 10px 5px;
+  }
+}
+
 .modal-form button {
   outline: none;
   cursor: pointer;
@@ -647,10 +653,7 @@ body {
 
   .modal-content h1 {
     font-size: 18px;
-  }
-
-  .modal-form input[type="email"] {
-    width: 100%;
+    text-align: center;
   }
 
   .modal-form button {

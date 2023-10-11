@@ -1,10 +1,13 @@
+if (!sessionStorage.getItem("modalShown")) {
+  var delayInMilliseconds = 1000;
+  setTimeout(showModal, delayInMilliseconds);
+  sessionStorage.setItem("modalShown", "true");
+}
+
 function showModal() {
   var modal = document.getElementById("myModal");
   modal.style.display = "block";
 }
-
-var delayInMilliseconds = 5000;
-setTimeout(showModal, delayInMilliseconds);
 
 document.getElementById("closeModal").addEventListener("click", function () {
   document.getElementById("myModal").style.display = "none";
