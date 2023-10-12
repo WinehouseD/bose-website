@@ -24,6 +24,7 @@ document
         "Thank you for signing up! You will receive Bose emails and communications."
       );
       emailInput.value = "";
+      document.getElementById("myModal").style.display = "none";
     } else {
       alert("Please enter a valid email address.");
     }
